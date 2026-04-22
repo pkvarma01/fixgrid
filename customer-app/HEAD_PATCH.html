@@ -1,0 +1,29 @@
+<!--
+  ══════════════════════════════════════════════════════
+  PWA HEAD PATCH — customer.php
+  ══════════════════════════════════════════════════════
+  Add these lines inside <head> in customer.php,
+  right after the existing <meta name="theme-color"> tag.
+  ══════════════════════════════════════════════════════
+-->
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/customer-app/manifest.json">
+
+<!-- iOS PWA support (Safari doesn't read manifest) -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FixGrid">
+<link rel="apple-touch-icon" sizes="152x152" href="/customer-app/icon-152.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/customer-app/icon-192.png">
+
+<!-- Windows tiles -->
+<meta name="msapplication-TileImage" content="/customer-app/icon-144.png">
+<meta name="msapplication-TileColor" content="#0B3C5D">
+
+<!-- Splash screen color (Android) -->
+<meta name="theme-color" content="#0B3C5D" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B3C5D" media="(prefers-color-scheme: dark)">
+
+<!-- Prevent phone number detection on iOS -->
+<meta name="format-detection" content="telephone=no">

@@ -1,0 +1,50 @@
+{
+  "_comment": "FixGrid Engineer App — TWA config for Bubblewrap",
+  "_usage": "Run: npx @bubblewrap/cli init --manifest=https://www.fixgrid.in/engineer-app/manifest.json",
+
+  "packageId": "in.fixgrid.engineer",
+  "host": "www.fixgrid.in",
+  "name": "FixGrid Engineer",
+  "launcherName": "FG Engineer",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#0B3C5D",
+  "navigationColor": "#0B1117",
+  "navigationColorDark": "#0B1117",
+  "navigationDividerColor": "#1E3A5F",
+  "navigationDividerColorDark": "#1E3A5F",
+  "backgroundColor": "#0F1117",
+  "startUrl": "/engineer-app/engineer.php",
+  "iconUrl": "https://www.fixgrid.in/engineer-app/icon-512.png",
+  "maskableIconUrl": "https://www.fixgrid.in/engineer-app/icon-maskable-512.png",
+  "monochromeIconUrl": "https://www.fixgrid.in/engineer-app/icon-512.png",
+  "splashScreenFadeOutDuration": 600,
+  "enableNotifications": true,
+  "shortcuts": [
+    {
+      "name": "My Jobs",
+      "short_name": "Jobs",
+      "url": "/engineer-app/engineer.php",
+      "icon": "https://www.fixgrid.in/engineer-app/icon-96.png"
+    }
+  ],
+  "features": {
+    "locationDelegation": { "enabled": true },
+    "playBilling": { "enabled": false }
+  },
+  "alphaDependencies": { "enabled": false },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://www.fixgrid.in/engineer-app/",
+  "minSdkVersion": 19,
+  "targetSdkVersion": 34,
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://www.fixgrid.in/engineer-app/manifest.json",
+  "fallbackType": "customtabs",
+  "serviceAccountJsonFile": "./service-account.json",
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "fixgrid-engineer"
+  }
+}

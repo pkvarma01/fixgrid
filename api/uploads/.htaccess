@@ -1,0 +1,3 @@
+Options -ExecCGI
+RemoveHandler .php .php5 .phtml .pl .py
+RemoveType .php .php5 .phtml

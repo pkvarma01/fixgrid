@@ -1,0 +1,50 @@
+{
+  "_comment": "FixGrid Customer App — TWA (Trusted Web Activity) config for Bubblewrap",
+  "_usage": "Run: npx @bubblewrap/cli init --manifest=https://www.fixgrid.in/customer-app/manifest.json",
+
+  "packageId": "in.fixgrid.customer",
+  "host": "www.fixgrid.in",
+  "name": "FixGrid — Book a Service",
+  "launcherName": "FixGrid",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#0B3C5D",
+  "navigationColor": "#0B3C5D",
+  "navigationColorDark": "#0B3C5D",
+  "navigationDividerColor": "#0B3C5D",
+  "navigationDividerColorDark": "#0B3C5D",
+  "backgroundColor": "#0B3C5D",
+  "startUrl": "/customer-app/customer.php",
+  "iconUrl": "https://www.fixgrid.in/customer-app/icon-512.png",
+  "maskableIconUrl": "https://www.fixgrid.in/customer-app/icon-maskable-512.png",
+  "monochromeIconUrl": "https://www.fixgrid.in/customer-app/icon-512.png",
+  "splashScreenFadeOutDuration": 600,
+  "enableNotifications": true,
+  "shortcuts": [
+    {
+      "name": "Book a Service",
+      "short_name": "Book",
+      "url": "/customer-app/customer.php",
+      "icon": "https://www.fixgrid.in/customer-app/icon-96.png"
+    }
+  ],
+  "features": {
+    "locationDelegation": { "enabled": true },
+    "playBilling": { "enabled": false }
+  },
+  "alphaDependencies": { "enabled": false },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://www.fixgrid.in/customer-app/",
+  "minSdkVersion": 19,
+  "targetSdkVersion": 34,
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://www.fixgrid.in/customer-app/manifest.json",
+  "fallbackType": "customtabs",
+  "serviceAccountJsonFile": "./service-account.json",
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "fixgrid-customer"
+  }
+}

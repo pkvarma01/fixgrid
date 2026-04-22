@@ -1,0 +1,43 @@
+{
+  "name": "FixGrid Engineer",
+  "short_name": "FG Engineer",
+  "description": "FixGrid Engineer App — accept jobs, update status, track earnings and manage your profile.",
+  "start_url": "/engineer-app/engineer.php",
+  "scope": "/engineer-app/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F1117",
+  "theme_color": "#0B3C5D",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["utilities", "productivity", "business"],
+  "icons": [
+    { "src": "/engineer-app/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/engineer-app/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/engineer-app/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Available Jobs",
+      "short_name": "Jobs",
+      "description": "View pending jobs near you",
+      "url": "/engineer-app/engineer.php#dashboard",
+      "icons": [{ "src": "/engineer-app/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "My Earnings",
+      "short_name": "Earnings",
+      "description": "Check your earnings",
+      "url": "/engineer-app/engineer.php#wallet",
+      "icons": [{ "src": "/engineer-app/icon-96.png", "sizes": "96x96" }]
+    }
+  ],
+  "prefer_related_applications": false
+}

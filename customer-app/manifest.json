@@ -1,0 +1,44 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "FixGrid_Customer",
+  "orientation": "portrait",
+  "scope": "/customer-app/",
+  "short_name": "FixGrid",
+  "start_url": "https://www.fixgrid.in/customer-app/customer.php",
+  "theme_color": "#0B3C5D",
+  "icons": [
+    {
+      "src": "https://www.fixgrid.in/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://www.fixgrid.in/apple-touch-icon.png",
+      "sizes": "180x180",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 180,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "in.fixgrid.customer",
+  "description": "FixGrid is a fast and reliable home services platform that connects you with verified technicians.\n\nBook services in minutes, track your technician in real-time, and get your work done hassle-free.\n\nServices include:\n• AC Repair &amp; Installation\n• Electrical Work\n• Plumbing Services\n• Appliance Repair\n• And more\n\nWhy choose FixGrid?\n• Quick booking process\n• Trusted professionals\n• Real-time tracking\n• Secure and easy experience\n\nDownload now and simplify your home service needs.",
+  "lang": "en",
+  "categories": [
+    "business",
+    "productivity"
+  ]
+}

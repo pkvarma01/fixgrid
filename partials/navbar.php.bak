@@ -1,0 +1,43 @@
+<?php
+/**
+ * FixGrid — Navbar Partial
+ * Include on every page: <?php include 'partials/navbar.php'; ?>
+ * (adjust path based on page depth)
+ */
+if (!isset($navLinks)) {
+  // Fallback if not loaded from parent
+  $navLinks = [
+    ['label'=>'Services','href'=>'services.php'],
+    ['label'=>'How it Works','href'=>'index.php#how'],
+    ['label'=>'Areas','href'=>'index.php#zones'],
+    ['label'=>'Corporate','href'=>'index.php#corporate'],
+    ['label'=>'Contact Us','href'=>'contact.php'],
+    ['label'=>'About','href'=>'about.php'],
+    ['label'=>'About','href'=>'about.php'],
+  ];
+}
+if (!isset($s)) $s = ['hp_nav_cta'=>'⚡ Book Now'];
+?>
+<nav class="nav" id="mainNav">
+  <div class="nav-wrap">
+    <a href="index.php" class="nav-logo">
+  <img src="/logo.png" alt="FixGrid Logo" class="logo-img">
+  <span class="logo-text">Fix<span>Grid</span></span>
+</a>
+    <div class="nav-links">
+      <?php foreach ($navLinks as $nl): ?>
+        <a href="<?= htmlspecialchars($nl['href'], ENT_QUOTES) ?>"><?= htmlspecialchars($nl['label'], ENT_QUOTES) ?></a>
+      <?php endforeach; ?>
+      <a href="contact.php" class="nav-book"><?= htmlspecialchars($s['hp_nav_cta'] ?? '⚡ Book Now', ENT_QUOTES) ?></a>
+    </div>
+    <button class="hamburger" onclick="toggleMob()" id="hamBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="mob-nav" id="mobNav">
+  <?php foreach ($navLinks as $nl): ?>
+    <a href="<?= htmlspecialchars($nl['href'], ENT_QUOTES) ?>" onclick="closeMob()"><?= htmlspecialchars($nl['label'], ENT_QUOTES) ?></a>
+  <?php endforeach; ?>
+  <a href="contact.php" class="mob-book" onclick="closeMob()"><?= htmlspecialchars($s['hp_nav_cta'] ?? '⚡ Book Now', ENT_QUOTES) ?></a>
+</nav>

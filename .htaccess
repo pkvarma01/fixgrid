@@ -1,0 +1,10 @@
+Options -Indexes
+RewriteEngine On
+
+# Force www → redirect fixgrid.in to www.fixgrid.in
+RewriteCond %{HTTP_HOST} ^fixgrid\.in$ [NC]
+RewriteRule ^(.*)$ https://www.fixgrid.in/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
